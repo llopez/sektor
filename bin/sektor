@@ -1,0 +1,10 @@
+#!/usr/bin/env ruby
+
+require "bundler/setup"
+require "sektor"
+
+tracks = Sektor.search ARGV[0]
+
+tracks.each do |track|
+  puts track.title
+end
