@@ -1,8 +1,9 @@
 module Sektor
   class Track
-    attr_reader :artist, :title, :time, :size, :bitrate, :link
+    attr_reader :id, :artist, :title, :time, :size, :bitrate, :link
 
-    def initialize(artist, title, time, size, bitrate, link)
+    def initialize(id, artist, title, time, size, bitrate, link)
+      @id = id
       @artist = artist
       @title = title
       @time = time
