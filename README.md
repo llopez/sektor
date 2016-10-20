@@ -1,5 +1,7 @@
 # Sektor
 
+[![Build Status](https://travis-ci.org/llopez/sektor.svg?branch=master)](https://travis-ci.org/llopez/sektor)
+
 Sektor is a ruby library, sektor helps you to seek and download your favorite music
 
 You can filter by several fields: bitrate, size, time...
@@ -9,16 +11,12 @@ You can filter by several fields: bitrate, size, time...
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'sektor'
+gem 'sektor', github: 'llopez/sektor'
 ```
 
 And then execute:
 
     $ bundle
-
-Or install it yourself as:
-
-    $ gem install sektor
 
 ## Usage
 
