@@ -1,4 +1,5 @@
 # Sektor
+<img src="https://raw.githubusercontent.com/llopez/Blog/gh-pages/img/sektor.gif" height="150" align="right"/>
 
 [![Build Status](https://travis-ci.org/llopez/sektor.svg?branch=master)](https://travis-ci.org/llopez/sektor)
 
