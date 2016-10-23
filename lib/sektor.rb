@@ -17,7 +17,7 @@ module Sektor
 
   def self.parse(doc)
     result = doc.css("li.track").map do |fragment|
-      Parser::Track.new(doc).parse
+      Parser::Track.new(fragment).parse
     end
     result.map{ |r| Track.new(*r) }
   end
