@@ -12,10 +12,16 @@ require "sektor/result"
 module Sektor
   def self.search(title, filters = [])
     url_encoded_title = CGI.escape(title)
-    html = open("http://www.my-free-mp3.org/mp3/#{url_encoded_title}")
 
-    data = PageParser.parse(html)
-    Result.new(data)
+    page = 1
+    begin
+      html = open("http://www.my-free-mp3.org/mp3/#{url_encoded_title}?page=#{page}")
+      page_data = PageParser.parse(html)
+      data << page_data
+      page += 1
+    end while page_data.any?
+
+    Result.new(data.flatten)
 
     #query(parse(doc), filters).result
   end
