@@ -1,5 +1,5 @@
 module Sektor
-  class BitrateParser
+  module BitrateParser
     def self.parse(fragment)
       doc = Nokogiri::HTML(fragment)
       id = doc.css("a.info").attr("data-aid").value
@@ -10,4 +10,3 @@ module Sektor
     end
   end
 end
-
