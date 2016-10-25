@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TrackTest < Minitest::Test
+class TrackParserTest < Minitest::Test
   def setup
     @html = File.read File.expand_path("track_fragment.html", "test/data")
     @res = Minitest::Mock.new

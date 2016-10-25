@@ -1,6 +1,6 @@
 require 'test_helper'
 
-class TitleTest < Minitest::Test
+class TitleParserTest < Minitest::Test
   def setup
     @html = File.read File.expand_path("track_fragment.html", "test/data")
   end
