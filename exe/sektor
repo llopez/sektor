@@ -3,8 +3,6 @@
 require "bundler/setup"
 require "sektor"
 
-tracks = Sektor.search ARGV[0]
+result = Sektor.search ARGV[0]
 
-tracks.each do |track|
-  puts track.title
-end
+puts result.data.to_json

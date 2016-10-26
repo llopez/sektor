@@ -1,11 +1,12 @@
-require "sektor/version"
 require "nokogiri"
 require "open-uri"
 require "net/http"
 require "cgi"
-require "sektor/parsers"
+require "json"
+require "sektor/version"
 require "sektor/result"
 require "sektor/collector"
+require "sektor/parsers"
 
 module Sektor
   def self.search(term)
