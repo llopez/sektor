@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <script type="text/javascript">
+        //<![CDATA[
+        try {
+            if (!window.CloudFlare) {
+                var CloudFlare = [{
+                    verbose: 0,
+                    p: 0,
+                    byc: 0,
+                    owlid: "cf",
+                    bag2: 1,
+                    mirage2: 0,
+                    oracle: 0,
+                    paths: {
+                        cloudflare: "/cdn-cgi/nexp/dok3v=1613a3a185/"
+                    },
+                    atok: "abececb9a3bb52dce6f2d56c2b2238e4",
+                    petok: "52312fa1d8c3103916da9b16372d11d07eae5980-1477514778-1800",
+                    zone: "my-free-mp3.org",
+                    rocket: "0",
+                    apps: {
+                        "ga_key": {
+                            "ua": "UA-85785888-1",
+                            "ga_bs": "2"
+                        }
+                    }
+                }];
+                ! function(a, b) {
+                    a = document.createElement("script"), b = document.getElementsByTagName("script")[0], a.async = !0, a.src = "//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=088620b277/cloudflare.min.js", b.parentNode.insertBefore(a, b)
+                }()
+            }
+        } catch (e) {};
+        //]]>
+    </script>
+    <link href="/min/?g=css&amp;1.0313" media="screen" rel="stylesheet" type="text/css" />
+    <meta name="author" content="www.my-free-mp3.net" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="we are the champions Free mp3 Downloads!!!" />
+    <meta name="keywords" content="mp3" />
+    <title>we are the champions Mp3 Free downloads - www.my-free-mp3.org</title>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="/theme/new/images/favicon.png" />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="/min/?g=js&1.0455"></script>
+    <script type="text/javascript" src="/theme/new/js/lang.js"></script>
+    <script type="text/javascript">
+        var mouse_is_inside = false;
+        var view = '2';
+        var _gaq = _gaq || [];
+    </script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-85785888-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+        (function(b) {
+            (function(a) {
+                "__CF" in b && "DJS" in b.__CF ? b.__CF.DJS.push(a) : "addEventListener" in b ? b.addEventListener("load", a, !1) : b.attachEvent("onload", a)
+            })(function() {
+                "FB" in b && "Event" in FB && "subscribe" in FB.Event && (FB.Event.subscribe("edge.create", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "like", a])
+                }), FB.Event.subscribe("edge.remove", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "unlike", a])
+                }), FB.Event.subscribe("message.send", function(a) {
+                    _gaq.push(["_trackSocial", "facebook", "send", a])
+                }));
+                "twttr" in b && "events" in twttr && "bind" in twttr.events && twttr.events.bind("tweet", function(a) {
+                    if (a) {
+                        var b;
+                        if (a.target && a.target.nodeName == "IFRAME") a: {
+                            if (a = a.target.src) {
+                                a = a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);
+                                b = 0;
+                                for (var c; c = a[b]; ++b)
+                                    if (c.indexOf("url") === 0) {
+                                        b = unescape(c.split("=")[1]);
+                                        break a
+                                    }
+                            }
+                            b = void 0
+                        }
+                        _gaq.push(["_trackSocial", "twitter", "tweet", b])
+                    }
+                })
+            })
+        })(window);
+        /* ]]> */
+    </script>
+</head>
+
+<body class="visual">
+    <div class="ui-loader" style="display:none;">
+        <div class="spin"></div>
+        <h1>Loading</h1>
+    </div>
+    <!-- player UI (bar) -->
+    <div id="player" class="player_bar">
+        <div class="player_wrap">
+            <div class="left noselect">
+                <button class="play"></button>
+            </div>
+            <div class="center">
+                <div class="progressbar_main">
+                    <div class="slider">
+                        <div class="track_name"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="right">
+                <div class="time noselect"> 00:00</div>
+                <button class="prev buttons noselect"></button>
+                <button class="next buttons noselect"></button>
+                <div class="volume">
+                    <div class="volume_slider">
+                        <div class="ui-slider-bg"></div>
+                    </div>
+                </div>
+                <button class="repeat rp buttons noselect tip" title="Repeat"></button>
+                <button class="playlist pl buttons noselect tip" title="History"></button>
+            </div>
+        </div>
+        <div class="history" style="display:none;"></div>
+    </div>
+    <!-- !player UI (bar) -->
+    <div id="content_1080" style="position:relative;">
+        <!-- HEADER -->
+        <div id="header" class="header">
+            <div class="column_4 last">
+                <ul id="social_icons">
+                    <li>Please share: </li>
+                    <li>
+                        <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+                            <a class="a2a_button_facebook"></a>
+                            <a class="a2a_button_twitter"></a>
+                            <a class="a2a_button_google_plus"></a>
+                            <a class="a2a_button_whatsapp"></a>
+                            <a class="a2a_button_viber"></a>
+                            <a class="a2a_button_sms"></a>
+                        </div>
+                        <script async src="https://static.addtoany.com/menu/page.js"></script>
+                    </li>
+                    <li>Thank YOU!</li>
+                    <li id="panel_user">
+                        <script type="text/javascript">
+                            $(document).ready(function() {
+                                $("fieldset#signin_menu").mouseup(function() {
+                                    return false
+                                });
+                                $(document).mouseup(function(e) {
+                                    if ($(e.target).parent("a.signin").length == 0) {
+                                        $(".signin").removeClass("menu-open");
+                                        $("fieldset#signin_menu").hide();
+                                    }
+                                });
+                            });
+                        </script>
+                        <div id="topnav" class="topnav"><a href="#" class="signin"><span class="signin_span">Login</span></a>
+                        </div>
+                        <fieldset id="signin_menu">
+                            <!-- Login Panel -->
+                            <div class="signin_output"></div>
+                            <div class="login">
+                                <form method="post" id="login" class="signin_form" action="/login">
+                                    <label for="login_username">Username</label>
+                                    <input id="login_username" class="req" name="username" autocomplete="on" tabindex="4" type="text" />
+                                    <p>
+                                        <label for="login_password">Password</label>
+                                        <input id="login_password" class="req" name="password" tabindex="5" type="password" />
+                                    </p>
+                                    <input type="hidden" name="reg" value="1" />
+                                    <input class="signin_submit" value="Login" tabindex="6" type="submit" />
+                                    <div class="clear"></div>
+                                </form>
+                                <ul class="signin_others">
+                                    <li><a href="#" class="lost_password_butt">Forgot password</a>
+                                    </li>
+                                    <li><a href="#" class="register_butt">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Register Panel -->
+                            <div class="register">
+                                <form method="post" id="register" data-output=".signin_output" class="signin_form form" action="/register">
+                                    <label for="register_username">Username</label>
+                                    <input id="register_username" name="username" value="" title="username" tabindex="4" type="text" />
+                                    <p>
+                                        <label for="register_emain">E-mail</label>
+                                        <input id="register_emain" name="email" value="" title="password" tabindex="5" type="text" />
+                                    </p>
+                                    <p>
+                                        <label for="register_password">Password</label>
+                                        <input id="register_password" name="password" value="" title="password" tabindex="5" type="text" />
+                                    </p>
+                                    <input type="hidden" name="reg" value="1" />
+                                    <input class="signin_submit" value="Register" tabindex="6" type="submit" />
+                                    <div class="clear"></div>
+                                </form>
+                                <ul class="signin_others">
+                                    <li><a href="#" class="login_butt">Login</a>
+                                    </li>
+                                    <li><a href="#" class="lost_password_butt">Forgot password</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Forgot pass panel -->
+                            <div class="lost_password">
+                                <form method="post" id="lost" class="signin_form" action="/forgot">
+                                    <label for="lost_password_email">E-mail</label>
+                                    <input id="lost_password_email" name="email" value="" tabindex="4" type="text" />
+                                    <input type="hidden" name="reg" value="1" />
+                                    <input class="signin_submit" value="Send password" tabindex="6" type="submit" />
+                                    <div class="clear"></div>
+                                </form>
+                                <ul class="signin_others">
+                                    <li><a href="#" class="login_butt">Login</a>
+                                    </li>
+                                    <li><a href="#" class="register_butt">Register</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </fieldset>
+                    </li>
+                </ul>
+                <!-- Main menu -->
+                <div id="smoothmenu" class="top_menu">
+                    <ul id="menu-main-menu" class="menu">
+                        <li><a class="hash lhome" href="/">Home</a>
+                        </li>
+                        <li><a class="hash lartists" href="/artists/">Artists</a>
+                        </li>
+                        <li><a class="hash lartists" href="/chart/">Charts</a>
+                        </li>
+                        <li><a class="hash lgenres" href="/genres/">genres</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- !Main menu -->
+            <div class="clear"></div>
+            <!-- end #header -->
+        </div>
+        <div class="border_h"></div>
+        <br>
+        <ul id="social_icons">
+            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+            <!-- myup --><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2178505663391550" data-ad-slot="2402100634"></ins>
+            <script>
+                (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+        </ul>
+        <!-- Main content -->
+        <div id="mainContent" class="view_2">
+            <div id="cont">
+                <div class="post">
+                    <div class="column_1 artist_meta">
+                        <div id="sidebar">
+                            <a href="https://www.my-free-mp3.net/"><img src="/theme/new/images/logo_min.png" alt="we are the champions Mp3 Free downloads - www.my-free-mp3.org">
+                            </a>
+                            <br>
+                            <div class="inner">
+                                <form id="search" method="get" class="search_form" action="/mp3/">
+                                    <input name="q" class="placeholder" type="text" rel=".111" autocomplete="on" value="we are the champions" placeholder="Search">
+                                    <input type="submit" value="Search">
+                                </form>
+                            </div>
+                            <div class="g-plusone" data-annotation="inline" data-width="200"></div>
+                            <div class="inner" style="list-style: none outside none;color:blue;">
+                                <li>How to download we are the champions mp3 file:</li>
+                                <li>1. Click on Download link</li>
+                                <li>2. Click "Continue" on below of that page</li>
+                                <li>3. Save mp3 file</li>
+                            </div>
+                            <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                            <!-- iloveyou --><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-2178505663391550" data-ad-slot="8448634231" data-ad-format="auto"></ins>
+                            <script>
+                                (adsbygoogle = window.adsbygoogle || []).push({});
+                            </script>
+                            <ul class="artist_list">
+                                <li><a href="/mp3/we+are+the+champions" class="hash" ">we are the champions mp3</a></li><li><a href="/mp3/%ED%83%9C%EC%97%B0+%EB%93%A4%EB%A6%AC%EB%82%98%EC%9A%94 " class="hash "  ">태연 들리나요 mp3</a>
+                                </li>
+                                <li><a href="/mp3/%D1%82%D1%8B+%D0%BC%D0%BE%D1%8F+%D0%B6%D0%B5%D0%BC%D1%87%D1%83%D0%B6%D0%B8%D0%BD%D0%B0" class="hash" ">ты моя жемчужина mp3</a></li><li><a href="/mp3/cell+theme " class="hash "  ">cell theme mp3</a>
+                                </li>
+                                <li><a href="/mp3/chris+de+burgh+crusader" class="hash" ">chris de burgh crusader mp3</a></li><li><a href="/mp3/The+Key+the+Secret+Urban+Cookie+Collective " class="hash "  ">The Key the Secret Urban Cookie Collective mp3</a>
+                                </li>
+                                <li><a href="/mp3/method+man+feat" class="hash" ">method man feat mp3</a></li><li><a href="/mp3/midnight+boys+noize " class="hash "  ">midnight boys noize mp3</a>
+                                </li>
+                                <li><a href="/mp3/taylor+swift+love+story" class="hash" ">taylor swift love story mp3</a></li><li><a href="/mp3/%E4%B8%8B%E5%9C%B0+%E7%B4%AB%E9%87%8E+God+Save+The+Girls " class="hash "  ">下地 紫野 God Save The Girls mp3</a>
+                                </li>
+                                <li><a href="/mp3/%D0%B2+%D1%82%D0%B2%D0%BE%D0%B8+%D1%80%D1%83%D0%BA%D0%B8" class="hash" ">в твои руки mp3</a></li><li><a href="/mp3/Flume+-+Never+Be+Like+You+feat.+Kai+%28Martin+Solveig+Remix%29 " class="hash "  ">Flume - Never Be Like You feat. Kai (Martin Solveig Remix) mp3</a>
+                                </li>
+                                <li><a href="/mp3/m.c.AT+feat.+DA+PUMP" class="hash" ">m.c.AT feat. DA PUMP mp3</a></li><li><a href="/mp3/%ED%83%9C%EC%82%AC%EC%9E%90 " class="hash "  ">태사자 mp3</a>
+                                </li>
+                                <li><a href="/mp3/David+guetta+commander" class="hash" ">David guetta commander mp3</a></li><li><a href="/mp3/youandme " class="hash "  ">youandme mp3</a>
+                                </li>
+                                <li><a href="/mp3/Kings+Of+Tomorrow+Finally" class="hash" ">Kings Of Tomorrow Finally mp3</a></li><li><a href="/mp3/psy+trance " class="hash "  ">psy trance mp3</a>
+                                </li>
+                                <li><a href="/mp3/kshmr+memories" class="hash" ">kshmr memories mp3</a></li><li><a href="/mp3/50+cent+in+da+club " class="hash "  ">50 cent in da club mp3</a>
+                                </li>
+                                <li><a href="/mp3/24%2F7+%28feat.+Nimo%29+Ufo361" class="hash" ">24/7 (feat. Nimo) Ufo361 mp3</a></li><li><a href="/mp3/%E3%81%84%E3%81%8D%E3%82%82%E3%81%AE%E3%81%8C%E3%81%8B%E3%82%8A " class="hash "  ">いきものがかり mp3</a>
+                                </li>
+                                <li><a href="/mp3/ian+van+dahl+secret" class="hash" ">ian van dahl secret mp3</a></li><li><a href="/mp3/carrie+underwood+-+dirty+laundry " class="hash "  ">carrie underwood - dirty laundry mp3</a>
+                                </li>
+                                <li><a href="/mp3/shine+pilipinas+shine" class="hash" ">shine pilipinas shine mp3</a></li><li><a href="/mp3/austra+beat " class="hash "  ">austra beat mp3</a>
+                                </li>
+                                <li><a href="/mp3/%EC%95%84%EC%9D%B4%EC%98%A4%EC%95%84%EC%9D%B4+%28I.O.I%29+%EC%9E%A0%EA%B9%90%EB%A7%8C" class="hash" ">아이오아이 (I.O.I) 잠깐만 mp3</a></li><li><a href="/mp3/call+on+me+starley " class="hash "  ">call on me starley mp3</a>
+                                </li>
+                                <li><a href="/mp3/DJ+Bazz+-+Andre+Michelle+%28Original+Mix%29" class="hash" ">DJ Bazz - Andre Michelle (Original Mix) mp3</a></li><li><a href="/mp3/On+Planets+-+Spectacle+ft.+Madalen+Duke " class="hash "  ">On Planets - Spectacle ft. Madalen Duke mp3</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div itemscope="" itemtype="http://data-vocabulary.org/Review" style="margin: 0 10px;"><span itemprop="itemreviewed">we are the champions</span>
+                            <br>Reviewed by <span itemprop="reviewer">we are the champions</span> on
+                            <br>
+                            <time itemprop="dtreviewed" datetime="2016-10-26">26 October 2016</time>.
+                            <br><span itemprop="summary">we are the champions mp3 Download mp3skull</span>
+                            <br><span itemprop="description">we are the champions Free Mp3 Music Download. Play we are the champions Mp3 songs online and download them for free. we are the champions 4shared, kat.cr, ask.fm, zippyshare, mp3skull, soundcloud, last.fm, mp3lio, aiomp3, mp3goo, junglevibe</span>
+                            <br>Rating: <span itemprop="rating">4.7</span>
+                        </div>
+                        <div>download, descargar, 下载, downloaden, télécharger, डाउनलोड, ダウンロード, 다운로드, nedlasting, Ściągnij, baixar, indir, تحميل, yukle, Λήψη, הורדה, scaricare, ಡೌನ್ಲೋಡ್, скачать, ladda ner, tải về</div>
+                    </div>
+                </div>
+                <div id="content" class="column_3 last post_content">
+                    <div id="panel_br">
+                        <ul class="breadcrumb">
+                            <li><a rel="nofollow" href="/" class="hash">Home</a>
+                            </li><span class="divider">/</span>
+                            <li class="active"><a rel="nofollow" href="/mp3/we are the champions" class="hash">we are the champions</a>
+                            </li>
+                        </ul>
+                        <div class="panel_sh"><a href="#" class="shuffle">Shuffle</a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- <span onclick="player.playlist.AddHistoryUI(this);"><b>+</b></span> -->
+                    <div class="white">
+                        <div class="inner" style="padding:0;">
+                            <ul class="playlist">
+                                <li id="1" class="track">
+                                    <div onclick="player.playlist.playtrack(this);" class="controll_button playlist_button">
+                                        <div class="play"></div>
+                                    </div><a class="info" data-aid="-50678799_422765730" data-current="0" data-duration="182">Freddie Mercury &amp; Queen - We Are The Champions mp3</a>
+                                    <div class="add_panel">
+                                        <div class="track_time">3:02</div>
+                                        <a class="share butt"> </a><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.my-free-mp3.com/l/-50678799_422765730/" target="_blank"><i class="fa fa-facebook social"></i></a><a href="https://twitter.com/intent/tweet?text=http://www.my-free-mp3.com/l/-50678799_422765730/" target="_blank" title="Tweet"><i class="fa fa-twitter social"></i></a><a href="https://plus.google.com/share?url=http://www.my-free-mp3.com/l/-50678799_422765730/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus social"></i></a>
+                                        <a class="bitrate butt bit"></a>
+                                        <a class="tip butt text" data-text="299475074"></a><a rel="nofollow" class="dw" href="#" onClick="window.open('http://unref.eu/-50678799_422765730', '_blank')">Download</a>
+                                    </div>
+                                    <div class="track_name"><a rel="nofollow" href="/mp3/Freddie+Mercury+%26+Queen" class="hash"><b class="artist">Freddie Mercury &amp; Queen</b></a><span class="name"> We Are The Champions</span>
+                                    </div>
+                                </li>
+                                <li id="2" class="track">
+                                    <div onclick="player.playlist.playtrack(this);" class="controll_button playlist_button">
+                                        <div class="play"></div>
+                                    </div><a class="info" data-aid="-71316392_281129508" data-current="0" data-duration="194">Glee Cast - We Are The Champions mp3</a>
+                                    <div class="add_panel">
+                                        <div class="track_time">3:14</div>
+                                        <a class="share butt"> </a><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.my-free-mp3.com/l/-71316392_281129508/" target="_blank"><i class="fa fa-facebook social"></i></a><a href="https://twitter.com/intent/tweet?text=http://www.my-free-mp3.com/l/-71316392_281129508/" target="_blank" title="Tweet"><i class="fa fa-twitter social"></i></a><a href="https://plus.google.com/share?url=http://www.my-free-mp3.com/l/-71316392_281129508/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus social"></i></a>
+                                        <a class="bitrate butt bit"></a>
+                                        <a class="tip butt text" data-text="27401238"></a><a rel="nofollow" class="dw" href="#" onClick="window.open('http://unref.eu/-71316392_281129508', '_blank')">Download</a>
+                                    </div>
+                                    <div class="track_name"><a rel="nofollow" href="/mp3/Glee+Cast" class="hash"><b class="artist">Glee Cast</b></a><span class="name"> We Are The Champions</span>
+                                    </div>
+                                </li>
+                                <li id="3" class="track">
+                                    <div onclick="player.playlist.playtrack(this);" class="controll_button playlist_button">
+                                        <div class="play"></div>
+                                    </div><a class="info" data-aid="59510463_249021867" data-current="0" data-duration="302">Queen - We Are The Champions (DJ Rockstar Remix) mp3</a>
+                                    <div class="add_panel">
+                                        <div class="track_time">5:02</div>
+                                        <a class="share butt"> </a><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.my-free-mp3.com/l/59510463_249021867/" target="_blank"><i class="fa fa-facebook social"></i></a><a href="https://twitter.com/intent/tweet?text=http://www.my-free-mp3.com/l/59510463_249021867/" target="_blank" title="Tweet"><i class="fa fa-twitter social"></i></a><a href="https://plus.google.com/share?url=http://www.my-free-mp3.com/l/59510463_249021867/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus social"></i></a>
+                                        <a class="bitrate butt bit"></a><a rel="nofollow" class="dw" href="#" onClick="window.open('http://unref.eu/59510463_249021867', '_blank')">Download</a>
+                                    </div>
+                                    <div class="track_name"><a rel="nofollow" href="/mp3/Queen" class="hash"><b class="artist">Queen</b></a><span class="name"> We Are The Champions (DJ Rockstar Remix)</span>
+                                    </div>
+                                </li>
+                                <li id="4" class="track">
+                                    <div onclick="player.playlist.playtrack(this);" class="controll_button playlist_button">
+                                        <div class="play"></div>
+                                    </div><a class="info" data-aid="156750209_321808611" data-current="0" data-duration="168">12. Валерия Симулик - We Are The Champions (Queen cover) mp3</a>
+                                    <div class="add_panel">
+                                        <div class="track_time">2:48</div>
+                                        <a class="share butt"> </a><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.my-free-mp3.com/l/156750209_321808611/" target="_blank"><i class="fa fa-facebook social"></i></a><a href="https://twitter.com/intent/tweet?text=http://www.my-free-mp3.com/l/156750209_321808611/" target="_blank" title="Tweet"><i class="fa fa-twitter social"></i></a><a href="https://plus.google.com/share?url=http://www.my-free-mp3.com/l/156750209_321808611/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus social"></i></a>
+                                        <a class="bitrate butt bit"></a><a rel="nofollow" class="dw" href="#" onClick="window.open('http://unref.eu/156750209_321808611', '_blank')">Download</a>
+                                    </div>
+                                    <div class="track_name"><a rel="nofollow" href="/mp3/12.+%D0%92%D0%B0%D0%BB%D0%B5%D1%80%D0%B8%D1%8F+%D0%A1%D0%B8%D0%BC%D1%83%D0%BB%D0%B8%D0%BA" class="hash"><b class="artist">12. Валерия Симулик</b></a><span class="name"> We Are The Champions (Queen cover)</span>
+                                    </div>
+                                </li>
+                                <li id="5" class="track">
+                                    <div onclick="player.playlist.playtrack(this);" class="controll_button playlist_button">
+                                        <div class="play"></div>
+                                    </div><a class="info" data-aid="45345721_161081239" data-current="0" data-duration="189">Queen for children  - We are the champions mp3</a>
+                                    <div class="add_panel">
+                                        <div class="track_time">3:09</div>
+                                        <a class="share butt"> </a><a href="https://www.facebook.com/sharer/sharer.php?u=http://www.my-free-mp3.com/l/45345721_161081239/" target="_blank"><i class="fa fa-facebook social"></i></a><a href="https://twitter.com/intent/tweet?text=http://www.my-free-mp3.com/l/45345721_161081239/" target="_blank" title="Tweet"><i class="fa fa-twitter social"></i></a><a href="https://plus.google.com/share?url=http://www.my-free-mp3.com/l/45345721_161081239/" target="_blank" title="Share on Google+"><i class="fa fa-google-plus social"></i></a>
+                                        <a class="bitrate butt bit"></a><a rel="nofollow" class="dw" href="#" onClick="window.open('http://unref.eu/45345721_161081239', '_blank')">Download</a>
+                                    </div>
+                                    <div class="track_name"><a rel="nofollow" href="/mp3/Queen+for+children+" class="hash"><b class="artist">Queen for children </b></a><span class="name"> We are the champions</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- end .white -->
+                    <div id="panel_nr">
+                        <div class="pagination"><a href="/music/we+are+the+champions?page=2">More tracks</a>
+                        </div>
+                    </div>
+                    <!-- end .shadow -->
+                    <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                    <!-- myup --><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2178505663391550" data-ad-slot="2402100634"></ins>
+                    <script>
+                        (adsbygoogle = window.adsbygoogle || []).push({});
+                    </script>
+                </div>
+                <!--0.012146949768066 -->
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div id="main">
+            <div class="logo_container">
+                <a href="https://www.my-free-mp3.net"><img src="/theme/new/images/logo.png" alt="we are the champions Mp3 Free downloads - www.my-free-mp3.org">
+                </a>
+                <form id="search_main" method="get" action="/mp3/" class="search_form">
+                    <input class="placeholder" style="width:500px;" type="text" name="q" autocomplete="off" placeholder="Search">
+                    <input type="submit" value="Search">
+                </form>
+                <br></br>
+                <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+                <!-- myup --><ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-2178505663391550" data-ad-slot="2402100634"></ins>
+                <script>
+                    (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+            </div>
+        </div>
+    </div>
+    <div class="111" style="width:100px;"></div>
+    <!-- !Main content -->
+    <!--  #footer -->
+    <div id="footer_push"></div>
+    <div id="footer">
+        <div class="border_h footer"></div>
+        </ul>
+    </div>
+    <div id="copyright">Free <a href="https://www.my-free-mp3.net">myfreemp3</a> Downloads | www.my-free-mp3.org © 2012- 2016 &nbsp;&nbsp;</div>
+    <div class="clear"></div>
+    </div>
+    <!-- end #footer -->
+    </div>
+    <!-- end #content_1080 -->
+    <div id="error_window" class="reveal-dialog" style="width:200px;">
+        <div class="header">
+            <h4 class="title"></h4><a class="close-reveal-modal">&#215;</a>
+            <div class="clear"></div>
+        </div>
+        <div class="info"> &nbsp;</div>
+        <div class="button_set">
+            <input type="button" class="green close_modal ok_redirect" value="Close">
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div id="share_window" class="reveal-modal share-modal"><a class="close-reveal-modal">x</a>
+        <h3>Link on this track</h3>
+        <input class="link" type="text" value="" />
+        <h3>If you like this song PLEASE Share link with friends. Thanks :)</h3>
+    </div>
+</body>
+
+</html>

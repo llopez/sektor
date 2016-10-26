@@ -22,7 +22,7 @@ And then execute:
 ## Usage
 
 ```ruby
-tracks = Sektor.search "we are the champions", [{field: :bitrate, predicate: :eq, value: 320}]
+result = Sektor.search "we are the champions"
 ```
 
 ## Development
