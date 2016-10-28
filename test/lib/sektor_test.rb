@@ -21,7 +21,17 @@ class SektorTest < Minitest::Test
   end
 
   def test_that_search_returns_kind_of_result
-    assert_kind_of Sektor::Result, Sektor.search("we are the champions") 
+    assert_kind_of Sektor::Result, Sektor.search("we are the champions")
   end
-end
 
+  # 
+  # def test_search_benchmark
+  #   WebMock.disable!
+  #   init_time = Time.now
+  #   Sektor.search "we are the champions"
+  #   end_time = Time.now
+  #   WebMock.enable!
+  #   slapped_time = end_time - init_time
+  #   assert slapped_time < 20
+  # end
+end
