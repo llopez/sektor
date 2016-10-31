@@ -13,7 +13,7 @@ class TrackParserTest < Minitest::Test
       title: 'We Are The Champions',
       artist: 'Freddie Mercury & Queen',
       time: 182,
-      size: '1.40',
+      size: 1433,
       bitrate: 64,
       link: "http://s.myfreemp3.space/s.php?q=-50678799_422765730"
     }, Sektor::TrackParser.parse(@html))

@@ -5,7 +5,12 @@ module Sektor
       id = doc.css("a.info").attr("data-aid").value
       uri = URI("http://www.my-free-mp3.org/bitrate/")
       res = Net::HTTP.post_form(uri, id: id)
-      res.body.split(" ")[1]
+      format res.body.split(" ")[1]
+    end
+
+    def self.format(str)
+      int, dec = str.split(".")
+      int.to_i * 1024 + dec.to_i * 1024 / 100
     end
   end
 end
