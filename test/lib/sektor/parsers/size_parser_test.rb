@@ -17,4 +17,8 @@ class SizeParserTest < Minitest::Test
     assert_equal 1433, Sektor::SizeParser.format("1.40")
     assert_equal 5324, Sektor::SizeParser.format("5.20")
   end
+
+  def test_format_returns_0_for_nil
+    assert_equal 0, Sektor::SizeParser.format(nil)
+  end
 end

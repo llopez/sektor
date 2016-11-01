@@ -9,6 +9,7 @@ module Sektor
     end
 
     def self.format(str)
+      return 0 if str.nil?
       int, dec = str.split(".")
       int.to_i * 1024 + dec.to_i * 1024 / 100
     end
