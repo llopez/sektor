@@ -6,21 +6,21 @@ class CollectorTest < Minitest::Test
     @page_2 = File.read File.expand_path("page-2.html", "test/data")
     @page_3 = File.read File.expand_path("page-empty.html", "test/data")
 
-    stub_request(:get, "http://www.my-free-mp3.org/mp3/we+are+the+champions?page=1").
+    stub_request(:get, "http://www.example.com/mp3/we+are+the+champions?page=1").
       to_return(:status => 200, :body => @page_1, :headers => {})
 
-    stub_request(:get, "http://www.my-free-mp3.org/mp3/we+are+the+champions?page=2").
+    stub_request(:get, "http://www.example.com/mp3/we+are+the+champions?page=2").
       to_return(:status => 200, :body => @page_2, :headers => {})
 
-    stub_request(:get, "http://www.my-free-mp3.org/mp3/we+are+the+champions?page=3").
+    stub_request(:get, "http://www.example.com/mp3/we+are+the+champions?page=3").
       to_return(:status => 200, :body => @page_3, :headers => {})
 
-    stub_request(:post, "http://www.my-free-mp3.org/bitrate/").
+    stub_request(:post, "http://www.example.com/bitrate/").
       to_return(:status => 200, :body => "<li>Size: 1.40 мб.&nbsp;&nbsp;&nbsp; Bitrate: 64 kbs.</li>", :headers => {})
   end
 
   def test_url
-    assert_equal "http://www.my-free-mp3.org/mp3/we+are+the+champions",
+    assert_equal "http://www.example.com/mp3/we+are+the+champions",
       Sektor::Collector.url("we are the champions")
   end
 
