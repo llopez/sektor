@@ -24,14 +24,10 @@ class SektorTest < Minitest::Test
     assert_kind_of Sektor::Result, Sektor.search("we are the champions")
   end
 
-  # 
-  # def test_search_benchmark
-  #   WebMock.disable!
-  #   init_time = Time.now
-  #   Sektor.search "we are the champions"
-  #   end_time = Time.now
-  #   WebMock.enable!
-  #   slapped_time = end_time - init_time
-  #   assert slapped_time < 20
-  # end
+  def test_configure
+    Sektor.configure do |config|
+      config.domain = "example.com"
+    end
+    assert_equal "example.com", Sektor.config.domain
+  end
 end

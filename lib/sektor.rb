@@ -5,6 +5,7 @@ require "cgi"
 require "json"
 require "sektor/version"
 require "sektor/result"
+require "sektor/config"
 require "sektor/collector"
 require "sektor/parsers"
 
@@ -13,5 +14,12 @@ module Sektor
     data = Collector.work(term)
     Result.new(data)
   end
-end
 
+  def self.config
+    @config ||= Config.new
+  end
+
+  def self.configure
+    yield config
+  end
+end

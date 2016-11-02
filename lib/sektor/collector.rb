@@ -18,7 +18,7 @@ module Sektor
 
     def self.url(term)
       url_encoded_title = CGI.escape(term)
-      "http://www.my-free-mp3.org/mp3/#{url_encoded_title}"
+      "http://#{Sektor.config.domain}/mp3/#{url_encoded_title}"
     end
 
     def self.get_page(url, page)
