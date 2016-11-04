@@ -5,8 +5,6 @@
 
 Sektor is a ruby library, sektor helps you to seek and download your favorite music
 
-You can filter by several fields: bitrate, size, time...
-
 ## Installation
 
 Add this line to your application's Gemfile:
@@ -21,8 +19,18 @@ And then execute:
 
 ## Usage
 
+#### bulk search
+
 ```ruby
-result = Sektor.search "we are the champions"
+search = Sektor.search "we are the champions"
+search.all
+```
+
+### per page search
+
+```ruby
+search = Sektor.search "we are the champions"
+search.page(1)
 ```
 
 ## Development
@@ -39,4 +47,3 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/llopez
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-

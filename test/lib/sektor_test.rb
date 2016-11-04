@@ -19,8 +19,8 @@ class SektorTest < Minitest::Test
     refute_nil ::Sektor::VERSION
   end
 
-  def test_that_search_returns_kind_of_result
-    assert_kind_of Sektor::Result, Sektor.search("we are the champions")
+  def test_that_search_returns_kind_of_search
+    assert_kind_of Sektor::Search, Sektor.search("we are the champions")
   end
 
   def test_configure
