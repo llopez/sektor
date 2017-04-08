@@ -5,4 +5,4 @@ require "sektor"
 
 result = Sektor.search ARGV[0]
 
-puts result.data.to_json
+puts result.all.to_json
