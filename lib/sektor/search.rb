@@ -5,7 +5,7 @@ module Sektor
     end
 
     def page(page)
-      html = open(url + "?page=#{page}").read
+      html = open(url + "?page=#{page}", proxy: Sektor.config.proxy).read
       PageParser.parse(html)
     end
 
