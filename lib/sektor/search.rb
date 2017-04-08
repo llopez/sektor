@@ -22,7 +22,7 @@ module Sektor
 
     def url
       url_encoded_title = CGI.escape(@term)
-      "http://#{Sektor.config.domain}/mp3/#{url_encoded_title}"
+      "https://#{Sektor.config.domain}/mp3/#{url_encoded_title}"
     end
   end
 end
