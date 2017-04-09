@@ -4,7 +4,7 @@ module Sektor
       doc = Nokogiri::HTML(fragment)
       id = doc.css("a.info").attr("data-aid").value
 
-      "http://s.myfreemp3.space/s.php?q=#{id}"
+      "https://mp3mp3.site/start.php?q=#{id}"
     end
   end
 end

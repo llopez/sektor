@@ -5,13 +5,13 @@ class SektorTest < Minitest::Test
     page_1 = File.read File.expand_path("page-1.html", "test/data")
     page_2 = File.read File.expand_path("page-empty.html", "test/data")
 
-    stub_request(:get, "http://www.example.com/mp3/we+are+the+champions?page=1").
+    stub_request(:get, "https://www.example.com/mp3/we+are+the+champions?page=1").
       to_return(:status => 200, :body => page_1, :headers => {})
 
-    stub_request(:get, "http://www.example.com/mp3/we+are+the+champions?page=2").
+    stub_request(:get, "https://www.example.com/mp3/we+are+the+champions?page=2").
       to_return(:status => 200, :body => page_2, :headers => {})
 
-    stub_request(:post, "http://www.example.com/bitrate/").
+    stub_request(:post, "https://www.example.com/bitrate/").
       to_return(:status => 200, :body => "<li>Size: 1.40 мб.&nbsp;&nbsp;&nbsp; Bitrate: 64 kbs.</li>", :headers => {})
   end
 

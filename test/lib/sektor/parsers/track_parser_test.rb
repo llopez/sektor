@@ -3,7 +3,7 @@ require 'test_helper'
 class TrackParserTest < Minitest::Test
   def setup
     @html = File.read File.expand_path("track_fragment.html", "test/data")
-    stub_request(:post, "http://www.example.com/bitrate/").
+    stub_request(:post, "https://www.example.com/bitrate/").
       to_return(:status => 200, :body => "<li>Size: 1.40 мб.&nbsp;&nbsp;&nbsp; Bitrate: 64 kbs.</li>", :headers => {})
   end
 
@@ -15,7 +15,7 @@ class TrackParserTest < Minitest::Test
       time: 182,
       size: 1433,
       bitrate: 64,
-      link: "http://s.myfreemp3.space/s.php?q=-50678799_422765730"
+      link: "https://mp3mp3.site/start.php?q=-50678799_422765730"
     }, Sektor::TrackParser.parse(@html))
   end
 end

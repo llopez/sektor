@@ -4,7 +4,7 @@ class BitrateParserTest < Minitest::Test
   def setup
     @html = File.read File.expand_path("track_fragment.html", "test/data")
 
-    stub_request(:post, "http://www.example.com/bitrate/").
+    stub_request(:post, "https://www.example.com/bitrate/").
       to_return(:status => 200, :body => "<li>Size: 1.40 мб.&nbsp;&nbsp;&nbsp; Bitrate: 64 kbs.</li>", :headers => {})
   end
 
